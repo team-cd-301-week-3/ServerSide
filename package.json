@@ -1,0 +1,23 @@
+{
+  "name": "booklistserver",
+  "version": "1.0.0",
+  "description": "Server side code for full stack app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-cd-301-week-3/ServerSide.git"
+  },
+  "author": "Craig and Dylan DeltaV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team-cd-301-week-3/ServerSide/issues"
+  },
+  "homepage": "https://github.com/team-cd-301-week-3/ServerSide#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
