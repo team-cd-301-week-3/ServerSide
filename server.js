@@ -25,11 +25,11 @@ const books = [
     description: 'Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny.'
   }
 ];
-app.get('/books', (req, res) => {
+app.get('/api/vi/books', (req, res) => {
   res.send(books);
 });
 
-app.get('/book/:id', (req, res) => {
+app.get('/api/vi/book/:id', (req, res) => {
   // let SQL = `SELECT ... WHERE id = $1`
   console.log(`Finding book with id = ${req.params.id}`);
 
@@ -43,7 +43,7 @@ app.get('/book/:id', (req, res) => {
   }
 });
 
-app.post('/books/add', (req, res) => {
+app.post('/api/vi/books/add', (req, res) => {
   let newBook = {};
   newBook.id = nextBookId++;
   newBook.title = req.body.title;
